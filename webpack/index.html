@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手写Webpack</title>
+  </head>
+  <body>
+    <h1>手写Webpack</h1>
+    <script src="./dist/bundle.js"></script>
+    <script type="text/javascript">
+      // var exports = {};
+
+      // // 自执行函数， 实现作用域隔离
+      // (function(exports, code) {
+      //   eval(code)
+      // })(exports, "exports.default = function(a,b){return a + b}")
+      // console.log(exports.default(1, 2));
+
+      // // 支持require
+
+      // bundle.js
+    //   ;(function (list) {
+    //     function require(file) {
+    //       var exports = {}
+    //       ;(function (exports, code) {
+    //         eval(code)
+    //       })(exports, list[file])
+    //       return exports
+    //     }
+    //     require('index.js')
+    //   })({
+    //     'index.js': `
+    // var add = require('add.js').default
+    // console.log(add(1 , 2))
+    //     `,
+    //     'add.js': `exports.default = function(a,b){return a + b}`,
+    //   })
+    </script>
+  </body>
+</html>
